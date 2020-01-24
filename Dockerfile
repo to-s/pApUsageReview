@@ -7,10 +7,4 @@ RUN apk --no-cache add curl jq
 
 COPY ./pointAp.sh /
 
-CMD ls -Ral
-
-CMD chmod +x /pointAp.sh
-
-CMD ls- Ral
-
-CMD /pointAp.sh | grep "Ap used"
+CMD sh /pointAp.sh | grep "Ap used"
