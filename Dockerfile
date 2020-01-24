@@ -7,4 +7,6 @@ RUN apk --no-cache add curl jq
 
 COPY ./pointAp.sh /
 
+CMD ls -Ral
+
 CMD sh /pointAp.sh | grep "Ap used"
