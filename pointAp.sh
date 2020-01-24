@@ -3,6 +3,8 @@ COUNT=1
 PAP_AVAILABLE=0
 FUNCTION=""
 
+echo "start"
+
 set_comment() {
 
         API_HEADER="Accept: application/vnd.github.v3+json; application/vnd.github.antiope-preview+json"
