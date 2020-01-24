@@ -3,6 +3,8 @@ COUNT=1
 PAP_AVAILABLE=0
 FUNCTION=""
 
+git diff develop | grep -E '^(commit|@@|[+]\s.+\WAp)' > diff.txt
+
 while IFS= read -r LINE; do
 
         if echo $LINE | egrep '^[+]\s.+\WAp'; then
